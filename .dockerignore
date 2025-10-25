@@ -36,6 +36,9 @@ yarn-debug.log*
 frontend/dist/
 frontend/build/
 
+# Development dependencies
+frontend/node_modules/
+
 # Database (will be in volume)
 *.db
 *.sqlite

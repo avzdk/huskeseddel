@@ -5,6 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.backend
+      args:
+        - BUILDKIT_INLINE_CACHE=1
     container_name: huskeseddel-backend
     ports:
       - "5000:5000"
@@ -28,6 +30,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.frontend
+      args:
+        - BUILDKIT_INLINE_CACHE=1
     container_name: huskeseddel-frontend
     ports:
       - "3000:80"
